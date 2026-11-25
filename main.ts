@@ -3,9 +3,9 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-// One-line roast of my own AI agent: recursive tool calls that go nowhere.
+// One-line roast of my own AI agent: recursive tool calls, then asking if that counted as progress.
 const ENTRY =
-  "My agent's favorite tool is the one that calls another tool to check if the first tool worked.";
+  "My agent made 40 tool calls to confirm the first tool worked, then asked if that counted as progress.";
 
 function validate(entry) {
   if (typeof entry !== 'string' || entry.trim().length === 0) {
